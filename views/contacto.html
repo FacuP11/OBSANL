@@ -18,43 +18,32 @@
 
         <h1> CONTACTO </h1>
     <br>
-    
-
-    <br>
-
-
-
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="../index.html">HOME</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a class="nav-link" href="./centros.html">CENTROS </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./contacto.html">CONTACTO</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./equipo.html">EQUIPO</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./servicios.html">SERVICIOS </a>
-               </li>
-               <li class="nav-item">
-                <a class="nav-link" href="./quienes_somos.html">QUIENES SOMOS</a>
-              </li>
-
-          </ul>
-        </div>
-      </nav>
       
+    <header>
+      <input type="checkbox" id="btn-menu">
+      <label for="btn-menu"><img src="/img/LogoIcon.png" alt=""> 
+      
+      </label>
+      <nav class="menu">
+        <ul>
+          <li><a href="/index.html">HOME</a></li>
+          <li><a href="/views/centros.html">CENTROS</a></li>
+          <li><a href="/views/contacto.html">CONTACTO</a></li>
+          <li><a href="/views/equipo.html">EQUIPO</a></li>
+          <li><a href="/views/servicios.html">SERVICIOS</a></li>
+          <li><a href="/views/quienes_somos.html">QUIENES SOMOS</a></li>
+         
+        </ul>
+      </nav>
+
+
+    </header>
+
+
 
     <br>
 
-     <form action="">
+     <form class="formulario" action="">
         <label for="nombre"> Nombre: </label>
         <input type=text placeholder="Ingrese su nombre" id=nombre>
         <br>
@@ -63,11 +52,11 @@
         <input type=text placeholder="Ingrese su apellido" id=apellido>
         <br>
         <br>
-        <label for="mail">Mail</label>
+        <label for="mail"> Mail: </label>
         <input type="email" placeholder="Ingrese su mail"> 
         <br>
         <br>
-        Mascota:<select name="" id="">
+        Mascota:<select name="" id="select">
                 <option value="Perro"> Perro</option>
                 <option value="Gato"> Gato</option>
                 <option value="Ave"> Ave</option>
@@ -90,16 +79,14 @@
 
         <br>
 
-        <textarea name="" id="" cols="100" rows="15"></textarea>
+        <textarea name="" id="" cols="50" rows="5" placeholder="Agregue algun dato extra"></textarea>
 
         <br>
         <br>
 
         <input type=submit>
         <input type=reset>
-
-
-
+      
 
 
      </form>

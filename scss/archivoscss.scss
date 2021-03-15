@@ -34,21 +34,90 @@ align-content: flex-start;
     justify-content: flex-end;
 
 }
+/*NAVBAR*/
 
-.navbar {
-    background-color: rgba(207, 205, 82, 0.774);
+header {
+     
+    width: 100%;
+    background-color: rgba(202, 150, 73, 0.753);
+    display:flex;
+    align-content: flex-start;
+    flex-direction:row;
 }
+
+#btn-menu {
+    display: none;
+    
+
+}
+
+header label {
+
+    
+    
+    height: 60px;
+    padding: 5px;
+
+}
+label{
+    width: 60px;
+}
+    header label:hover {
+    cursor: pointer;
+    display:flex;
+    
+    
+
+
+}
+
+
+.menu ul {
+    margin:5px;
+    list-style: none;
+    padding: 5px 10px;
+    display: flex;
+    flex-direction:row;
+    
+
+}
+
+
+
+.menu li:hover {
+    background: rgba (0,0,0,0.3);
+    
+
+
+}
+.menu li a {
+    display:block;
+    padding: 15px 20px;
+    color: rgb(68, 48, 29);
+    text-decoration: none;
+
+}
+
+
+
+
+
 
 .textologo{
     width: 300px;
     height: 400px;
     margin: 20px;
-    padding: 5px;
+    padding: 10px;
     border: black solid 2px;
 
     font-family: 'Poppins', sans-serif;
-    font-size: 24px;
-    text-shadow: white 1px 2px;
+    font-size: 23px;
+    text-shadow: rgb(219, 213, 213) 1px 2px;
+    background-color: #fbac7e9a;
+    background-image: linear-gradient(62deg, #fbac7e8c 0%, #f7cf687e 100%);
+
+    
+    
     
     word-wrap: break-word;
     text-align: justify;
@@ -69,6 +138,8 @@ h1 {
     background-color: #ffce8e9c;
     text-align: center;
     text-shadow: white 1px 1px;
+    text-decoration: underline;
+
 
     /*GRADIENTE*/
 
@@ -78,17 +149,23 @@ h1 {
 }
 
 h2 {
-    margin: 10px;
-    padding: 5px;
-    font-style: normal;
+    margin-left: 10px;
+    padding: 20px;
+    font-size: 40px;
     color: #680018 ;
+    text-decoration: underline;
+    text-shadow: 1px 1px rgb(87, 82, 82);
     
 
 }
 
 h3 {
-    font-size: 18px;
-    color: #680018;
+    margin-left: 10px;
+    padding: 20px ;
+    font-size: 40px;
+    color: #680018 ;
+    text-decoration: underline;
+    text-shadow: 1px 1px rgb(87, 82, 82);
 }
 
 body {
@@ -99,14 +176,24 @@ body {
     
 
 }
+.opinion {
+    width: 180px;
+    height: 60px;
+    margin-left: 10px;
+    padding: 0px 20px 5px 20px;
+    display:flex;
+    flex-direction: row;
+    align-items:center;
+}
+
 
  .scroll{
     position: relative;
     overflow-y: scroll;
     height: 100px;
     width: 500px;
-    margin: 10px;
-    padding: 5px;
+    margin: 10px 0 10px 20px;
+    padding: 10px;
     text-shadow: white 1px 1px;
     font-size: 26px;
     font-family: 'Newsreader', serif;
@@ -138,11 +225,7 @@ a:hover {
     color:slateblue
 }
 
-ol {
-    color: #ff0000;
-    list-style-type: circle;
-    text-shadow: 1px 1px black;
-}
+
 
 
 /*CENTROS*/
@@ -155,10 +238,17 @@ ol {
     margin-left: 20px;
     
     color:black;
+    
 
 }
-
-.fondotable{
+.fondotable ol {
+    
+        color: #ff7e28;
+        list-style-type: circle;
+        text-shadow: 1px 1px black;
+    
+}
+.fondotable {
     height: 500px;
     width: 900px;
     margin: 20px;
@@ -167,9 +257,9 @@ ol {
     text-shadow: 1px 1px white;
     
     
-    border: 3px solid rgba(0, 0, 0, 0.719) ;
-    border-radius: 25px;
-    background-image: url("../img/fondoIndex.jpeg") ;
+    border: 3px solid  rgb(0, 0, 0) ; 
+    
+    background-image: url("../img/fondoTabla.jpg") ;
     
     background-size: 100%;
     background-position:center;
@@ -178,7 +268,20 @@ ol {
 
 }
 
+/*----CONTACTO----*/
 
+.formulario {
+    margin: 20px;
+    font-weight: bold;
+    
+
+}
+.formulario input {
+    margin-left: 10px;
+}
+#select {
+    margin-left: 10px;
+}
 
 /*SERVICIOS*/
 
@@ -192,14 +295,14 @@ ol {
 
     /*Box*/
 
-    width: 1200px;
-    height: 90vh;
+    width: 80%;
+    height: 80%;
     border: 4px;
     border-color: rgb(172,76,38);
     border-color: radial-gradient(circle, rgba(172,76,38,0.9248074229691877) 0%, rgba(236,230,220,0.9164040616246498) 100%);
     border-style: inset ;
     padding: 2px;
-    margin: 100px 100px 10px 55px;
+    margin: 10px 10px 10px 15px;
     
     
     
@@ -214,7 +317,7 @@ ol {
 
 .servicio1{
     
-    width: 200px;
+    width: 20%;
     height: 70vh;
     border-radius: 10px;
     border: solid 2px ;
@@ -227,17 +330,18 @@ ol {
 
     display: flex;
     flex-direction: column;
+    align-items:stretch;
     
     
    
 }
 .titservicio1{
-    width: 20%;
+    width: 100%;
     height: 25%;
     padding: 2px;
     margin: 1px;
     text-align: center;
-    font-size: 30px;
+    font-size: 26px;
     text-shadow: white 1px 1px;
 
 
@@ -248,7 +352,7 @@ ol {
 }
 
 .textservicio1{
-    width: 80%;
+    width: 100%;
     height: 75%;
     margin: 2px;
     border:1px;
@@ -267,7 +371,7 @@ ol {
 .servicio2{
    
 
-    width: 200px;
+    width: 20%;
     height: 70vh;
     border-radius: 10px;
     border: solid 2px ;
@@ -285,12 +389,12 @@ ol {
 }
 
 .titservicio2{
-    width: 20%;
+    width: 100%;
     height: 25%;
     padding: 2px;
     margin: 1px;
     text-align: center;
-    font-size: 30px;
+    font-size: 26px;
     text-shadow: white 1px 1px;
 
     display:flex;
@@ -300,7 +404,7 @@ ol {
 }
 
 .textservicio2{
-    width: 80%;
+    width: 100%;
     height: 75%;
     margin: 2px;
     border:1px;
@@ -321,7 +425,7 @@ ol {
 .servicio3{
     
 
-    width: 200px;
+    width: 20%;
     height: 70vh;
     border-radius: 10px;
     border: solid 2px ;
@@ -340,12 +444,12 @@ ol {
 
 
 .titservicio3{
-    width: 20%;
+    width: 100%;
     height: 25%;
     padding: 2px;
     margin: 1px;
     text-align: center;
-    font-size: 30px;
+    font-size: 26px;
     text-shadow: white 1px 1px;
     display:flex;
     
@@ -354,7 +458,7 @@ ol {
 }
 
 .textservicio3{
-    width: 80%;
+    width: 100%;
     height: 75%;
     margin: 2px;
     border:1px;
@@ -378,7 +482,7 @@ ol {
 .servicio4{
   
 
-    width: 200px;
+    width: 20%;
     height: 70vh;
     border-radius: 10px;
     border: solid 2px ;
@@ -395,14 +499,15 @@ ol {
 
 
 .titservicio4{
-    width: 20%;
+    width: 100%;
     height: 25%;
     padding: 2px;
     margin: 1px;
     text-align: center;
-    font-size: 30px;
+    font-size: 26px;
     text-shadow: white 1px 1px;
     display:flex;
+    
     
     
 
@@ -410,7 +515,7 @@ ol {
 }
 
 .textservicio4{
-    width: 80%;
+    width: 100%;
     height: 75%;
     margin: 2px;
     border:1px;
@@ -424,11 +529,7 @@ ol {
 
 
 }
-/*NAVBAR*/
 
-.navbar-brand .nav-item .navbar-nav .nav-link .navbar-toggler-icon{
-    background-color: rgba(255, 255, 255, 0.342);
-}
     
 
 
@@ -442,12 +543,13 @@ ol {
 
 .textequip{
     
-    width: 1000px;
+    width: 100%;
     height: 70px;
     background: rgba(226, 200, 153, 0.466);
     text-shadow: white 2px 2px;
     text-align: center;
     font-size: 20px;
+    font-weight: bolder;
 
 }
 
@@ -462,8 +564,9 @@ ol {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    border: 2px grey;
+    border: 2px rgb(0, 0, 0);
     padding: 2px;
+    
 
     
 
@@ -474,10 +577,16 @@ ol {
 /*QUIENES SOMOS*/
 
 .descripcionQuienesSomos{
+    
+    height: 50%;
+    width: 81%;
+    margin: 10px 20px;
     text-align: justify;
     letter-spacing: 1.5px;
     font-size: 150%;
     font-weight: bold;
+    text-shadow: 2px 2px white;
+
 
 }
 /*GRID*/
@@ -552,3 +661,203 @@ text-align: center;
 .subheading {
     text-shadow: 2px 1px black;
 }
+
+
+/*-----RESPONSIVE-----*/
+
+@media (max-width: 768px){
+    .d-md-block{
+        display:block;
+    }
+    .d-none {
+        display: block !important;
+    }
+    .textequip {
+        height: 80%;
+    }
+    /*------------SERVICIOS----------*/
+    .serviciosPadre{
+        display:flex;
+        flex-direction: column;
+
+    }
+    .servicio1{
+        height: 20%;
+        width: 90%;
+         
+        display:flex;
+        flex-direction:row;
+    }
+    .servicio2 {
+        height: 20%;
+        width: 90%;
+         
+        display:flex;
+        flex-direction:row;
+    }
+    .servicio3{
+        height: 20%;
+        width: 90%;
+         
+        display:flex;
+        flex-direction:row;
+    }
+    .servicio4{
+        height: 20%;
+        width: 90%;
+         
+        display:flex;
+        flex-direction:row;
+    }
+
+}
+
+@media (max-width: 576px){
+    
+
+    /*----INDEX-----*/
+    header label {
+        display:block;
+
+    }
+    label {
+        margin-bottom: 10px;
+    }
+    .menu {
+        position:absolute;
+        background:  rgba(202, 150, 73, 0.925);
+        width: 50%;
+        margin-top: 60 px;
+        margin-left: -70%;
+        
+        animation-delay: 0.1s;
+        transition: all 0.4s;
+    }
+    
+    .menu ul {
+        flex-direction: column;
+        
+        text-shadow: 1px 1px white;
+        border-radius: 10px;
+        border: 2px groove;
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    #btn-menu:checked ~ .menu {
+        margin: 60px 0px 0px 0px;
+    }
+    body{
+        width: 580px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+
+    }
+    .cajalogo{
+        flex-direction:column;
+        flex-wrap:wrap;
+         
+
+    }
+    .logo {
+        width: 100px;
+        height: 100px;
+        display:none;
+    }
+    
+
+    .cajaopiniones{
+        width: 70%;
+        height: 100%;
+    }
+    .scroll{
+        width: 100%;
+        height: 200px;
+    }
+
+    /*----------CENTROS--------*/
+    th {
+        padding: 5px;
+    }
+    .fondotable{
+        width: 500px;
+        height: 50%;
+        background-position: unset;
+        text-align:start;
+    }    
+
+    .textotable {
+        border-bottom: solid 3px rgb(0, 0, 0);
+        font-size: 18px;
+    }
+   
+    .fondotable th{
+        border-right: 1px solid rgb(0, 0, 0);
+    }
+    
+
+    /*----CONTACTO----*/
+
+    /*----EQUIPO----*/
+    .textequip {
+        height: 70%;
+        width: 560px; 
+        display:flex;
+        justify-content: center;
+    }
+    .carouselContainer {
+        height: 80%;
+        width: 80%;
+        margin-bottom: 10px;
+        
+        display:flex;
+        justify-content: center;
+    }
+    .d-md-block{
+        display:block;
+    }
+    .d-none {
+        display: block !important;
+    }
+
+
+    /*----SERVICIOS----*/
+
+
+    .serviciosPadre{
+        display:flex;
+        flex-direction: column;
+
+    }
+    .servicio1{
+        height: 20%;
+        width: 90%;
+         
+        display:flex;
+        flex-direction:row;
+    }
+    .servicio2 {
+        height: 20%;
+        width: 90%;
+         
+        display:flex;
+        flex-direction:row;
+    }
+    .servicio3{
+        height: 20%;
+        width: 90%;
+         
+        display:flex;
+        flex-direction:row;
+    }
+    .servicio4{
+        height: 20%;
+        width: 90%;
+         
+        display:flex;
+        flex-direction:row;
+    }
+
+}
+
